@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("main-me.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.menu-area li a {
+  text-decoration: none;
+}
+
+.menu-area li {
+  list-style-type: none;
+}
+
+.custom-padding {
+  padding-top: 25px;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #333;
+  text-align: right;
+  position: fixed; 
+}
+
+.logo {
+  width: 15%;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.menu-area li {
+  display: inline-block;
+}
+
+.menu-area a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-area a:hover {
+  background: tomato;
+  color: #fff;
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+
+
+.css-typing h1 {
+  border-right: .15em solid white;  
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 40px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+
+.css-typing h1:nth-child(1) {
+  width: 10em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(2) {
+  width: 21em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(3) {
+  width: 6em;
+  font-size: 70px;
+  opacity: 0;
+  -webkit-animation: type3 4s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 4s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  99.9% {
+    border-right: .15em solid white;
+  }
+
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+
+  99.9% {
+    border-right: .15em solid black;
+  }
+
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99.9% {
+    border-right: .15em solid white;
+  }
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99.9% {
+    border-right: .15em solid white;
+  }
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+.menu {
+  float: left;
+}
+
+.menu-item {
+  float: left;
+
+  padding: 8px 9px;
+
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.About h1 {
+  font-size: 32px;
+  position: relative;
+  top: 550px;
+  color: grey;
+  text-align: center;
+  border: 5px solid #727e96;
+}
+
+.About p {
+  color: black;
+  font-size: 18px;
+  position: relative;
+  top: 560px;
+  text-align: center;
+}
+
+.Clubs h1 {
+  font-size: 32px;
+  position: relative;
+  top: 900px;
+  color: grey;
+  text-align: center;
+  
+}
+
+.Clubs p {
+  color: black;
+  font-size: 16px;
+  position: relative;
+  top: 910px;
+  text-align: center;
+
+}
+
+.contact-title{
+  margin-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contact-title h1{
+  font-size: 32px;
+  line-height: 10px;
+}
+
+form{
+  margin-top: 1000px;
+
+}
+
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  color: red;
+  margin-bottom: 16px;
+}
+
+input{
+  height: 45px;
+}
+
+form .submit{
+  background: green;
+  border-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+
+}
+form .submit:hover{
+  background-color: greenyellow;
+  cursor: pointer;
+
+}
