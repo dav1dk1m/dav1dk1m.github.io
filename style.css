@@ -247,7 +247,7 @@ nav {
 .About h1 {
   font-size: 32px;
   position: relative;
-  top: 600px;
+  top: 800px;
   color: grey;
   text-align: center;
   border: 5px solid #727e96;
@@ -257,7 +257,7 @@ nav {
   color: black;
   font-size: 18px;
   position: relative;
-  top: 600px;
+  top: 800px;
   text-align: center;
 }
 
